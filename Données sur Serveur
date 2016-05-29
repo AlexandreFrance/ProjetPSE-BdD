@@ -1,17 +1,21 @@
 Données serveur
 
-Bases de données
+-Bases de données
 Max 6 colonnes, et 200 lignes
 
-Tableau des utilisateurs
+-Tableau des utilisateurs
 Username, code, adresse mail
 
-Liste des BdD
+-Liste des BdD
 Créateur, nom, date de création
 
-Droits sur une base
+-Droits sur une base
 un fichier avec les droits par base 
 ex :
 Nom e 
-Nom2 l 
+Nom2 l
 
+-Fichier de log de connexion au serveur
+Nom d'utilisateur, date de connection, date de deconnection
+
+-Fichier d'historique des actions sur chaque base
