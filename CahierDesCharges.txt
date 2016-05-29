@@ -1,0 +1,38 @@
+Présentation générale du projet
+Elle repose sur les éléments suivants :
+· Le rapport et le guide de l'utilisateur fournis
+· Le programme source :
+¨ Respect de l'énoncé, originalité du thème proposé
+Qualité technique : découpage en fonctions, instructions, algorithmes, efficacité, gestion des
+erreurs...
+¨
+¨ Indentation, commentaires et nommage
+· Soutenance du travail :
+¨ Démonstration du programme
+¨ Interrogation individuelle sur le travail réalisé
+
+Vous devrez réaliser une application client/serveur multithread permettant la réalisation de services pour le
+compte de clients se connectant au serveur en utilisant des sockets TCP/IP et des files de messages.
+Voici quelques exemples de services possibles :
+· Échanges d'images : les clients déposent des images sur le serveur, accessibles par d'autres clients
+· Messagerie instantanée : les clients envoient des messages à d'autres présents
+· Gazouillis (twitter®) : les clients envoient des textes diffusés aux abonnés
+· Work flow : les clients soumettent des documents à valider et traiter (architecture Hub & Spoke)
+À vous de choisir les services à réaliser : soyez imaginatifs et créatifs
+
+Les séances de travaux pratiques permettent de vous accompagner pendant le développement du projet :
+· TP2 : gestion d'un journal
+· TP3 : serveur TCP
+· TP5 : développer une application multithread
+· TP6 : travailler sur l'architecture du projet
+· TP7 et TP8 : mise en oeuvre de la concurrence
+
+
+Architecture
+
+1. Le paramétrage du serveur se fera par arguments de la fonction main()
+2. Les workers communiquent entre eux avec des files de messages (voir modules msgbox et msg)
+3. Un thread log est chargé de journaliser les événements : connexions/déconnexions, requêtes clients...
+Le serveur mettra en oeuvre des mécanismes de gestion de thread (workers gérés correctement, en
+particulier leur terminaison) et de synchronisation (mutex, variables condition ou sémaphores) pour
+protéger la zone de mémoire partagée.
